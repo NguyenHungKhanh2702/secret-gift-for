@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông điệp bí ẩn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Màn hình loading với thanh tải -->
+    <div id="loading-screen" class="loading-screen">
+        <p>Đang tải...</p>
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+    </div>
+
+    <!-- notification-screen trong tệp HTML -->
+    <div id="notification-screen" class="notification-screen hidden">
+        <h2>Bạn có thư này!</h2>
+        <div class="envelope">
+            <img src="lovepik-pink-letter-png-image_401112306_wh1200.png" alt="Phong thư" class="envelope-image"> <!-- Thay đổi đường dẫn "envelope-image.png" thành đường dẫn đến ảnh phong thư của bạn -->
+            <button id="open-envelope" class="envelope-button">Mở ra</button>
+        </div>
+    </div>
+
+    <!-- Giao diện chúc mừng sinh nhật -->
+    <div id="birthday-screen" class="hidden birthday-screen">
+        <h1>🥳 Happy Birthday🎉</h1>
+        <p>Chúc bạn một ngày sinh nhật tuyệt vời và ngập tràn niềm vui!</p>
+        <img src="birthday_cake.jpg" alt="Happy Birthday" class="birthday-img">
+    </div>
+
+
+    <div id="confetti-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
